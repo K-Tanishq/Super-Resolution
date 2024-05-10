@@ -19,8 +19,7 @@ We have used two different approaches to tackle this problem. First of them bein
 
 1. **Initial Convolution Block (conv1):**
     - Conv2D with large_kernel_size, channels, and PReLU activation.
-    
-![Untitled (7)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/e231c4a3-47ee-411d-b6be-f4d0a907e7eb)
+    ![PReLU](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/e5fce5b1-11f4-4af1-a739-02fc90a39912)
     
     - Batch normalization after convolution.
 2. **Residual Blocks (residual_blocks):**
@@ -49,7 +48,7 @@ We have used two different approaches to tackle this problem. First of them bein
 
 ### **SRGAN Architecture**
 
-![Untitled (8)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/ef0f02d8-5b86-4651-95d5-16972c779011)
+![Untitled (7)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/e231c4a3-47ee-411d-b6be-f4d0a907e7eb)
 
 ### **Generator (SR Resnet-based)**
 
@@ -78,6 +77,8 @@ The generator in SRGAN is similar to the SR Resnet as described above:
     - Final Convolution Block (conv3):
         - Conv2D with large_kernel_size and Tanh activation.
         - Output layer for generating the HR (High-Resolution) image.
+        - 
+![Untitled (8)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/ef0f02d8-5b86-4651-95d5-16972c779011)
 
 ### **Discriminator**
 
@@ -108,7 +109,6 @@ The discriminator aims to distinguish between real HR images and generated HR im
 - **Discriminator Loss:**
     - Binary Cross-Entropy Loss: Discriminator's loss in classifying real and generated images.
     
-    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/bbd3d071-b48e-4e2e-92fd-bffa25569ca5/Untitled.png)
     
 
 # Results
