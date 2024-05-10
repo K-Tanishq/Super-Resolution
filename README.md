@@ -20,7 +20,7 @@ We have used two different approaches to tackle this problem. First of them bein
 1. **Initial Convolution Block (conv1):**
     - Conv2D with large_kernel_size, channels, and PReLU activation.
     
-    ![PReLU.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/a8496903-64ee-4a05-b6a1-3c5ffd3ff54b/PReLU.png)
+![Untitled (7)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/e231c4a3-47ee-411d-b6be-f4d0a907e7eb)
     
     - Batch normalization after convolution.
 2. **Residual Blocks (residual_blocks):**
@@ -47,9 +47,9 @@ We have used two different approaches to tackle this problem. First of them bein
 
 - Mean Squared Error (MSE) loss is used for the purpose of loss calculation.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/89df832f-5b76-4346-b853-7a142dd18b67/Untitled.png)
-
 ### **SRGAN Architecture**
+
+![Untitled (8)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/ef0f02d8-5b86-4651-95d5-16972c779011)
 
 ### **Generator (SR Resnet-based)**
 
@@ -114,21 +114,17 @@ The discriminator aims to distinguish between real HR images and generated HR im
 # Results
 
 ## Low Resolution Image
+![Untitled (9)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/8d02b3cd-b1a7-4c8c-8a1e-4575ff8899cb)
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/83f35db7-d241-4e9f-a60d-d0a334b0db5e/Untitled.png)
+## Super Resolved Images using SR-ResNet
+![Untitled (10)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/a2875c9f-25cb-4474-890c-5505b155d11b)
 
-## Super Resolution Image using SR ResNet
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/202b66b1-1a59-4344-826d-ff00bf07534c/Untitled.png)
-
-## Super Resolution Image using SR GANs
-
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/64450356-9b5d-4020-acf1-65e905d3319c/a1eaef31-d991-423f-af3d-59607cda4b62/Untitled.png)
+## Super Resolved Images using SR-ResGAN
+![Untitled (11)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/e96019f9-0625-4ca8-b1fc-807145bea604)
 
 ## Original High Resolution Image
-### Results of SR-ResNets
+![Untitled (12)](https://github.com/K-Tanishq/Super-Resolution/assets/169484818/1b4440cd-37a4-43b8-b4a9-acec3be7b38d)
 
-### Results of SR-GANs
 
 ### References
 - [Research Paper](https://arxiv.org/pdf/1609.04802)
